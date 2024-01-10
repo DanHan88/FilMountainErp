@@ -58,6 +58,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class InvestmentController {
+	/*
     @Autowired
     private InvestmentService investmentService;
     @Autowired
@@ -442,5 +443,6 @@ public class InvestmentController {
             return input.substring(0, maxLength) + "...";
         }
     }
-}
+     */ 
+}  
 
