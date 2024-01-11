@@ -10,10 +10,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/user/dashboard")
 public class UserDashboardController {
-	@GetMapping(value={"/"})
+	@GetMapping(value={""})
     public ModelAndView index(HttpServletRequest request) {
         ModelAndView mav = new ModelAndView();
-        mav.setViewName("views/index");
+        mav.setViewName("views/user/dashboard");
         return mav;
     }
 }

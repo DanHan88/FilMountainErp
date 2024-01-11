@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("user/product")
-public class UserProduct {
+@RequestMapping("/user/product")
+public class UserProductController {
 	@GetMapping(value={"/"})
     public ModelAndView index(HttpServletRequest request) {
         ModelAndView mav = new ModelAndView();

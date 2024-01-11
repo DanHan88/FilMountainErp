@@ -2,17 +2,13 @@
 <html xmlns:th="http://www.thymeleaf.org">
 		<div class="content" th:fragment="MainContent">
 			 <nav class="mb-2" aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="#!">Page 1</a></li>
-            <li class="breadcrumb-item"><a href="#!">Page 2</a></li>
-            <li class="breadcrumb-item active">Default</li>
-          </ol>
+          
         </nav>
         <div class="row gx-6 gy-3 mb-4 align-items-center">
           <div class="col-auto">
             <h2 class="mb-0">Product<span class="fw-normal text-body-tertiary ms-3">(3)</span></h2>
           </div>
-          <div class="col-auto"><a class="btn btn-primary px-5" href="../../apps/project-management/create-new.html"><i class="fa-solid fa-plus me-2"></i>Add new project</a></div>
+
         </div>
         <div class="row justify-content-between align-items-end mb-4 g-3">
           <div class="col-12 col-sm-auto">
@@ -52,30 +48,31 @@
           </div>
         </div>
 <div class="modal fade" id="projectsCardViewModal" tabindex="-1" aria-labelledby="projectsCardViewModal" aria-hidden="true">
-          <div class="modal-dialog modal-md">
+          <div class="modal-dialog modal-xl">
             <div class="modal-content overflow-hidden">
-              <div class="modal-header position-relative p-0">
+              <div class="modal-header position-relative">
+				  <h3 class="fw-bolder lh-sm">NANODC 004</h3>
                 <input class="d-none" id="projectCoverInput" type="file" />
-                <label class="position-absolute top-0 start-0" for="projectCoverInput"><span class="project-modal-btn d-inline-block bg-body-emphasis rounded-2 py-2 px-3 fs-9 fw-bolder mt-3 ms-3 cursor-pointer"><span class="fa-solid fa-image me-1"></span>Change</span></label>
-                <button class="btn btn-circle project-modal-btn position-absolute end-0 top-0 mt-3 me-3 bg-body-emphasis" data-bs-dismiss="modal"><span class="fa-solid fa-xmark text-body"></span></button><img class="w-100" src="../../assets/img/generic/43.png" alt="" style="max-height: 200px;min-height: 150px;" />
+                
               </div>
               <div class="modal-body p-5 px-md-6">
                 <div class="row g-5">
-                  <div class="col-12 col-md-9">
-                    <div class="mb-4">
-                      <h3 class="fw-bolder lh-sm">It was popularised in the 1960s with the release of Letraset</h3>
-                      <p class="text-body-highlight fw-semibold mb-0">In list<a class="ms-1 fw-bold" href="#!">Review </a></p>
-                    </div>
+				  <div class="col-4 d-flex align-items-center mb-4" style="text-align: center;">
+					  <img src="/assets/img/filmountain/nanoDC.png" alt="phoenix" width="auto">				  
+				  </div>
+                  <div class="col-8">
+                    
+                    <span class="badge badge-phoenix badge-phoenix-warning fs-20 me-3">현재 달성치</span>
                     <div class="d-flex align-items-center mb-4">
                       <p class="text-body-highlight fw-700 mb-0 me-2">64%</p>
                       <div class="progress bg-body-tertiary flex-1">
-                        <div class="progress-bar bg-body-quaternary rounded-3" role="progressbar" style="width: 64%"></div>
+                        <div class="progress-bar bg-primary-info rounded-3" role="progressbar" style="width: 64%"></div>
                       </div>
+                      
                     </div>
-                    <h6 class="text-body-secondary mb-2">Due date</h6>
                     
-                    <div class="mb-3">
-                      <h6 class="text-body-secondary mb-2">Assigness</h6>
+                    <div class="mt-3">
+                      <span class="badge badge-phoenix badge-phoenix-success fs-20 me-3">현재 투자자들</span>
                       <div class="d-flex">
                         <div class="dropdown"><a class="dropdown-toggle dropdown-caret-none d-inline-block" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                             <div class="avatar avatar-m  me-1">
@@ -269,304 +266,35 @@
                       </div>
                     </div>
                     <div class="mb-5">
-                      <h6 class="text-body-secondary mb-2">Labels</h6>
-                      <div class="d-flex align-items-center"><span class="badge badge-phoenix badge-phoenix-info fs-10 me-2">INFO</span><span class="badge badge-phoenix badge-phoenix-warning fs-10 me-2">URGENT</span><span class="badge badge-phoenix badge-phoenix-success fs-10 me-2">DONE</span><a class="text-body fw-bolder fs-9 lh-1 text-decoration-none" href="#!"> <span class="fa-solid fa-plus me-1"></span>Add another</a></div>
+           
                     </div>
                     <div class="mb-6">
                       <div class="d-flex align-items-center mb-2">
-                        <h4 class="me-3">Description</h4>
-                        <button class="btn btn-link p-0"><span class="fa-solid fa-pen"></span></button>
-                      </div>
-                      <p class="text-body-highlight">The female circus horse-rider is a recurring subject in Chagall’s work. In 1926 the art dealer Ambroise Vollard invited Chagall to make a project based on the circus. They visited Paris’s historic Cirque d’Hiver Bouglione together; Vollard lent Chagall his private box seats. Chagall completed 19 gouaches...<a class="fw-semibold" href="#!">see more </a></p>
-                    </div>
-                    <div class="bg-body-highlight rounded-2 p-4 mb-3">
-                      <div class="row justify-contnet-between border-bottom border-translucent g-0 gy-2 pb-3">
-                        <div class="col-12 col-sm">
-                          <p class="fs-9 text-body-secondary mb-2"><a class="fw-semibold" href="#!">Anthony Van Dyck </a>uploaded a file </p><img class="rounded-2 mb-2" src="../../assets/img/generic/42.png" alt="" width="220" />
-                          <p class="text-body-highlight fw-semibold fs-9 mb-0">Fruit blast</p>
-                        </div>
-                        <div class="col-12 col-sm-auto">
-                          <p class="text-body-secondary fw-semibold fs-10 mb-0">Oct 3 at 4:38 pm</p>
-                        </div>
-                      </div>
-                      <div class="row justify-contnet-between border-bottom border-translucent g-0 gy-1 py-3 align-items-center">
-                        <div class="col-12 col-sm">
-                          <p class="fs-9 text-body-secondary mb-0"><span class="text-body-highlight fw-semibold me-1">You</span>created this task</p>
-                        </div>
-                        <div class="col-12 col-sm-auto">
-                          <p class="text-body-secondary fw-semibold fs-10 mb-0">Oct 4 at 12:18 pm</p>
-                        </div>
-                      </div>
-                      <div class="row justify-contnet-between border-bottom border-translucent g-0 gy-1 py-3 align-items-center">
-                        <div class="col-12 col-sm">
-                          <p class="fs-9 text-body-secondary mb-1"><a class="fw-semibold" href="#!">Kazimir Malevich </a>added a subtask</p>
-                          <div class="d-flex">
-                            <p class="mb-0 fs-9 fw-semibold text-body-highlight"><span class="fa-solid fa-circle text-primary" data-fa-transform="shrink-8"> </span>Doing</p><span class="text-body-secondary fs-9 mx-2">to</span>
-                            <p class="mb-0 fs-9 fw-semibold text-body-highlight"><span class="fa-solid fa-circle text-primary" data-fa-transform="shrink-8"> </span>Review</p>
-                          </div>
-                        </div>
-                        <div class="col-12 col-sm-auto">
-                          <p class="text-body-secondary fw-semibold fs-10 mb-0">Oct 5 at 9:59 am</p>
-                        </div>
-                      </div>
-                      <div class="row justify-contnet-between gx-2 align-items-center pt-3">
-                        <div class="col col-auto">
-                          <div class="avatar avatar-m status-online ">
-                            <img class="rounded-circle " src="../../assets/img//team/30.webp" alt="" />
+                        <h4 class="me-3">상품 정보</h4>
 
-                          </div>
-                        </div>
-                        <div class="col col-auto flex-1">
-                          <p class="fs-9 text-body-secondary mb-0"><a class="fw-semibold" href="#!">Peter Paul Rubens </a>commented</p>
-                        </div>
-                        <div class="col-12 col-sm-auto order-1 order-sm-0">
-                          <p class="text-body-secondary fw-semibold fs-10 mb-0">Oct 5 at 9:59 am</p>
-                        </div>
-                        <div class="col-12 col-sm-11 ms-6">
-                          <p class="text-body fs-9 mb-0">Great job on the Phoenix template! The overall design and layout are visually appealing and user-friendly.</p>
-                        </div>
                       </div>
-                    </div>
-                    <textarea class="form-control form-control mb-3" rows="3" placeholder="Add comment"></textarea>
-                    <div class="d-flex flex-between-center pb-3 border-bottom border-translucent mb-6">
-                      <div class="d-flex">
-                        <button class="btn btn-sm px-2 py-0"><span class="fa-solid fa-image fs-8"></span></button>
-                        <button class="btn btn-sm px-2 py-0"><span class="fa-solid fa-calendar-days fs-8"></span></button>
-                        <button class="btn btn-sm px-2 py-0"><span class="fa-solid fa-location-dot fs-8"></span></button>
-                        <button class="btn btn-sm px-2 py-0"><span class="fa-solid fa-tag fs-8"></span></button>
-                      </div>
-                      <button class="btn btn-sm btn-primary px-6">Comment</button>
-                    </div>
-                    <div class="mb-6">
-                      <div class="mb-7">
-                        <h4 class="mb-4">To do list <span class="text-body-tertiary fw-normal fs-6">(23)</span></h4>
-                        <div class="row align-items-center g-0 justify-content-between mb-3">
-                          <div class="col-12 col-sm-auto">
-                            <div class="search-box w-100 mb-2 mb-sm-0" style="max-width:30rem;">
-                              <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
-                                <input class="form-control search-input search" type="search" placeholder="Search tasks" aria-label="Search" />
-                                <span class="fas fa-search search-box-icon"></span>
-
-                              </form>
-                            </div>
-                          </div>
-                          <div class="col-auto d-flex">
-                            <p class="mb-0 ms-sm-3 fs-9 text-body-tertiary fw-bold"><span class="fas fa-filter me-1 fw-extra-bold fs-10"></span>23 tasks</p>
-                            <button class="btn btn-link p-0 ms-3 fs-9 text-primary fw-bold"><span class="fas fa-sort me-1 fw-extra-bold fs-10"></span>Sorting</button>
-                          </div>
-                        </div>
-                        <div class="mb-3">
-                          <div class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top">
-                            <div class="col-12">
-                              <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle" data-todo-offcanvas-target="todoOffcanvas-1">
-                                <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
-                                  <input class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined" type="checkbox" id="checkbox-todo-0" />
-                                  <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1" for="checkbox-todo-0">Designing the dungeon</label><span class="badge badge-phoenix fs-10 ms-auto badge-phoenix-primary">DRAFT</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <div class="d-flex ms-4 lh-1 align-items-center">
-                                <button class="btn p-0 text-body-tertiary fs-10 me-2"><span class="fas fa-paperclip me-1"></span>2</button>
-                                <p class="text-body-tertiary fs-10 mb-md-0 me-2 mb-0">12 Nov, 2021</p>
-                                <p class="text-body-tertiary fs-10 fw-bold mb-md-0 mb-0">12:00 PM</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top">
-                            <div class="col-12">
-                              <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle" data-todo-offcanvas-target="todoOffcanvas-2">
-                                <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
-                                  <input class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined" type="checkbox" id="checkbox-todo-1" />
-                                  <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1" for="checkbox-todo-1">Hiring a motion graphic designer</label><span class="badge badge-phoenix fs-10 ms-auto badge-phoenix-warning">URGENT</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <div class="d-flex ms-4 lh-1 align-items-center">
-                                <button class="btn p-0 text-body-tertiary fs-10 me-2"><span class="fas fa-paperclip me-1"></span>2</button>
-                                <button class="btn p-0 text-warning fs-10 me-2"><span class="fas fa-tasks me-1"></span>3</button>
-                                <p class="text-body-tertiary fs-10 mb-md-0 me-2 mb-0">12 Nov, 2021</p>
-                                <p class="text-body-tertiary fs-10 fw-bold mb-md-0 mb-0">12:00 PM</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top">
-                            <div class="col-12">
-                              <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle" data-todo-offcanvas-target="todoOffcanvas-3">
-                                <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
-                                  <input class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined" type="checkbox" id="checkbox-todo-2" />
-                                  <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1" for="checkbox-todo-2">Daily Meetings Purpose, participants</label><span class="badge badge-phoenix fs-10 ms-auto badge-phoenix-info">ON PROCESS</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <div class="d-flex ms-4 lh-1 align-items-center">
-                                <button class="btn p-0 text-body-tertiary fs-10 me-2"><span class="fas fa-paperclip me-1"></span>4</button>
-                                <p class="text-body-tertiary fs-10 mb-md-0 me-2 mb-0">12 Dec, 2021</p>
-                                <p class="text-body-tertiary fs-10 fw-bold mb-md-0 mb-0">05:00 AM</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top">
-                            <div class="col-12">
-                              <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle" data-todo-offcanvas-target="todoOffcanvas-4">
-                                <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
-                                  <input class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined" type="checkbox" id="checkbox-todo-3" />
-                                  <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1" for="checkbox-todo-3">Finalizing the geometric shapes</label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <div class="d-flex ms-4 lh-1 align-items-center">
-                                <button class="btn p-0 text-body-tertiary fs-10 me-2"><span class="fas fa-paperclip me-1"></span>3</button>
-                                <p class="text-body-tertiary fs-10 mb-md-0 me-2 mb-0">12 Nov, 2021</p>
-                                <p class="text-body-tertiary fs-10 fw-bold mb-md-0 mb-0">12:00 PM</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top">
-                            <div class="col-12">
-                              <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle" data-todo-offcanvas-target="todoOffcanvas-5">
-                                <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
-                                  <input class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined" type="checkbox" id="checkbox-todo-4" />
-                                  <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1" for="checkbox-todo-4">Daily meeting with team members</label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <div class="d-flex ms-4 lh-1 align-items-center">
-                                <p class="text-body-tertiary fs-10 mb-md-0 me-2 mb-0">1 Nov, 2021</p>
-                                <p class="text-body-tertiary fs-10 fw-bold mb-md-0 mb-0">12:00 PM</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top">
-                            <div class="col-12">
-                              <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle" data-todo-offcanvas-target="todoOffcanvas-6">
-                                <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
-                                  <input class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined" type="checkbox" id="checkbox-todo-5" />
-                                  <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1" for="checkbox-todo-5">Daily Standup Meetings</label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <div class="d-flex ms-4 lh-1 align-items-center">
-                                <p class="text-body-tertiary fs-10 mb-md-0 me-2 mb-0">13 Nov, 2021</p>
-                                <p class="text-body-tertiary fs-10 fw-bold mb-md-0 mb-0">10:00 PM</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top">
-                            <div class="col-12">
-                              <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle" data-todo-offcanvas-target="todoOffcanvas-7">
-                                <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
-                                  <input class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined" type="checkbox" id="checkbox-todo-6" />
-                                  <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1" for="checkbox-todo-6">Procrastinate for a month</label><span class="badge badge-phoenix fs-10 ms-auto badge-phoenix-info">ON PROCESS</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <div class="d-flex ms-4 lh-1 align-items-center">
-                                <button class="btn p-0 text-body-tertiary fs-10 me-2"><span class="fas fa-paperclip me-1"></span>3</button>
-                                <p class="text-body-tertiary fs-10 mb-md-0 me-2 mb-0">12 Nov, 2021</p>
-                                <p class="text-body-tertiary fs-10 fw-bold mb-md-0 mb-0">12:00 PM</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top">
-                            <div class="col-12">
-                              <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle" data-todo-offcanvas-target="todoOffcanvas-8">
-                                <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
-                                  <input class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined" type="checkbox" id="checkbox-todo-7" />
-                                  <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1" for="checkbox-todo-7">warming up</label><span class="badge badge-phoenix fs-10 ms-auto badge-phoenix-info">CLOSE</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <div class="d-flex ms-4 lh-1 align-items-center">
-                                <button class="btn p-0 text-body-tertiary fs-10 me-2"><span class="fas fa-paperclip me-1"></span>3</button>
-                                <p class="text-body-tertiary fs-10 mb-md-0 me-2 mb-0">12 Nov, 2021</p>
-                                <p class="text-body-tertiary fs-10 fw-bold mb-md-0 mb-0">12:00 PM</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row justify-content-between align-items-md-center hover-actions-trigger btn-reveal-trigger border-translucent py-3 gx-0 border-top border-bottom">
-                            <div class="col-12">
-                              <div data-todo-offcanvas-toogle="data-todo-offcanvas-toogle" data-todo-offcanvas-target="todoOffcanvas-9">
-                                <div class="form-check mb-1 mb-md-0 d-flex align-items-center lh-1">
-                                  <input class="form-check-input flex-shrink-0 form-check-line-through mt-0 me-2 form-check-input-undefined" type="checkbox" id="checkbox-todo-8" />
-                                  <label class="form-check-label mb-0 fs-8 me-2 line-clamp-1" for="checkbox-todo-8">Make ready for release</label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <div class="d-flex ms-4 lh-1 align-items-center">
-                                <button class="btn p-0 text-body-tertiary fs-10 me-2"><span class="fas fa-paperclip me-1"></span>2</button>
-                                <p class="text-body-tertiary fs-10 mb-md-0 me-2 mb-0">2o Nov, 2021</p>
-                                <p class="text-body-tertiary fs-10 fw-bold mb-md-0 mb-0">1:00 AM</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div><a class="fw-bold fs-9 mt-4" href="#!"><span class="fas fa-plus me-1"></span>Add new task</a>
-                      </div>
-                    </div>
-                    <h4 class="mb-3">Files</h4>
-                    <div class="border-top pt-3 pb-4">
-                      <div class="me-n3">
-                        <div class="d-flex flex-between-center">
-                          <div class="d-flex mb-1"><span class="fa-solid fa-image me-2 text-body-tertiary fs-9"></span>
-                            <p class="text-body-highlight mb-0 lh-1">Silly_sight_1.png</p>
-                          </div>
-                          <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h"></span></button>
-                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item text-danger" href="#!">Delete</a><a class="dropdown-item" href="#!">Download</a><a class="dropdown-item" href="#!">Report abuse</a></div>
-                        </div>
-                        <p class="fs-9 text-body-tertiary mb-2"><span>768 kb</span><span class="text-body-quaternary mx-1">| </span><a href="#!">Shantinan Mekalan </a><span class="text-body-quaternary mx-1">| </span><span class="text-nowrap">21st Dec, 12:56 PM</span></p><img class="rounded-2" src="../../assets/img/generic/40.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="border-top py-3">
-                      <div class="me-n3">
-                        <div class="d-flex flex-between-center">
-                          <div class="d-flex mb-1"><span class="fa-solid fa-image me-2 text-body-tertiary fs-9"></span>
-                            <p class="text-body-highlight mb-0 lh-1">Silly_sight_1.png</p>
-                          </div>
-                          <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h"></span></button>
-                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item text-danger" href="#!">Delete</a><a class="dropdown-item" href="#!">Download</a><a class="dropdown-item" href="#!">Report abuse</a></div>
-                        </div>
-                        <p class="fs-9 text-body-tertiary mb-1"><span>12.8 mb</span><span class="text-body-quaternary mx-1">| </span><a href="#!">Yves Tanguy </a><span class="text-body-quaternary mx-1">| </span><span class="text-nowrap">19th Dec, 08:56 PM</span></p>
-                      </div>
-                    </div>
-                    <div class="border-top border-bottom py-3 mb-3">
-                      <div class="me-n3">
-                        <div class="d-flex flex-between-center">
-                          <div class="d-flex align-items-center mb-1"><span class="fa-solid fa-file-lines me-2 fs-9 text-body-tertiary"></span>
-                            <p class="text-body-highlight mb-0 lh-1">Project.txt</p>
-                          </div>
-                          <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h"></span></button>
-                          <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item text-danger" href="#!">Delete</a><a class="dropdown-item" href="#!">Download</a><a class="dropdown-item" href="#!">Report abuse</a></div>
-                        </div>
-                        <p class="fs-9 text-body-tertiary mb-1"><span>123 kb</span><span class="text-body-quaternary mx-1">|</span><a href="#!">Shantinan Mekalan</a><span class="text-body-quaternary mx-1">|</span><span class="text-nowrap">12th Dec, 12:56 PM</span></p>
-                      </div>
-                    </div><a class="fw-bold fs-9" href="#!"><span class="fas fa-plus me-1"></span>Add file(s)</a>
+                      
+						<p class="text-body-highlight">초 고 집적화된 파일코인 실링 머신 기존 장비 대비 4배 이상의 성능</p>
+						<p class="text-body-highlight">단계적 장비 확장 가능 초기 시스템 구축 이후 실링 용량에 따라 확장이 용이</p>
+						<p class="text-body-highlight">손쉬운 관리와 관제 시스템 원격 모니터링과 터치스크린 지원으로 간편하게 관리</p>
+						<p class="text-body-highlight">스토리지 자동 복구 시스템 채택 Seagate의 세계 유일의 자동복구 시스템 채용</p>
+						<p class="text-body-highlight">파일코인 시스템 교육 및 장비운영 교육 제공 5일 30시간</p>
+						<p class="text-body-highlight">온보딩을 위한 대용량 원본 데이터 제공 방송데이터, 스튜디오 데이터, 제타큐브나스</p>
+						<p class="text-body-highlight">전세계 SP 네트워크 제공 국내 4개 데이터센터, 미국, 홍콩, 유럽등 해외 SP 지원</p>
+						<p class="text-body-highlight">온보딩 프로세스 지원 복잡하고 어려운 온보딩 작업을 원격 지원</p>
+						<p class="text-body-highlight">담보 대여 지원 담보제공 업체 연결 및 대여 지원</p>
+						<p class="text-body-highlight">UPS일체형 장비로 최소 공간에서 저전력으로 운영 가능 20KW의 전력으로 운영</p>
+						<p class="text-body-highlight">Filecoin Green 인증 제공 태양광 전력 적용으로 FiL Green Gold 인센티브 확보 가능</p>
+						                    </div>
+                    
+                  
+                    
+                    
+                 
+                    
+                  
                   </div>
-                  <div class="col-12 col-md-3">
-                    <h5 class="text-body-secondary mb-3">Add to card</h5>
-                    <div class="mb-6">
-                      <button class="btn btn-sm btn-subtle-secondary rounded-3 mb-2 d-flex align-items-center w-100"><span class="me-2 fa-solid fa-user-plus"></span>Assignee</button>
-                      <button class="btn btn-sm btn-subtle-secondary rounded-3 mb-2 d-flex align-items-center w-100"><span class="me-2 fa-solid fa-tag"></span>Labels</button>
-                      <button class="btn btn-sm btn-subtle-secondary rounded-3 mb-2 d-flex align-items-center w-100"><span class="me-2 fa-solid fa-paperclip"></span>Attachments</button>
-                      <button class="btn btn-sm btn-subtle-secondary rounded-3 mb-2 d-flex align-items-center w-100"><span class="me-2 fa-solid fa-square-check"></span>Checklist</button>
-                      <button class="btn btn-sm btn-subtle-secondary rounded-3 mb-2 d-flex align-items-center w-100"><span class="me-2 fa-solid fa-calendar-days"></span>Dates</button>
-                    </div>
-                    <h5 class="text-body-secondary mb-3">Actions</h5>
-                    <div class="mb-6">
-                      <button class="btn btn-sm btn-subtle-secondary rounded-3 mb-2 d-flex align-items-center w-100"><span class="me-2 fa-solid fa-arrow-right"></span>Move</button>
-                      <button class="btn btn-sm btn-subtle-secondary rounded-3 mb-2 d-flex align-items-center w-100"><span class="me-2 fa-solid fa-copy"></span>Copy</button>
-                      <button class="btn btn-sm btn-subtle-secondary rounded-3 mb-2 d-flex align-items-center w-100"><span class="me-2 fa-solid fa-trash"></span>Remove</button>
-                      <button class="btn btn-sm btn-subtle-secondary rounded-3 mb-2 d-flex align-items-center w-100"><span class="me-2 fa-solid fa-box-archive"></span>Archive</button>
-                      <button class="btn btn-sm btn-subtle-secondary rounded-3 mb-2 d-flex align-items-center w-100"><span class="me-2 fa-solid fa-share-nodes"></span>Share</button>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
