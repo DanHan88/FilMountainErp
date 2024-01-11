@@ -13,7 +13,7 @@ public class UserInvestmentController {
 	@GetMapping(value={"/"})
     public ModelAndView index(HttpServletRequest request) {
         ModelAndView mav = new ModelAndView();
-        mav.setViewName("views/user/user_investment");
+        mav.setViewName("views/user/investment");
         return mav;
     }
 }
