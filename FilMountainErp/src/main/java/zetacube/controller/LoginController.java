@@ -9,14 +9,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
+@RequestMapping("/user")
 public class LoginController {
 
-	/*@GetMapping(value={"/login"})
-    public ModelAndView login(HttpServletRequest request) {
-        ModelAndView mav = new ModelAndView();
-        mav.setViewName("views/authentication/split/sign-in");
-        return mav;
-    }*/
 	@GetMapping(value={"/"})
     public ModelAndView login(HttpServletRequest request) {
         ModelAndView mav = new ModelAndView();
