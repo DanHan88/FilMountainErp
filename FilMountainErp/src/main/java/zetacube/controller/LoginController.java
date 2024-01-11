@@ -9,15 +9,31 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
-@RequestMapping("/login")
 public class LoginController {
 
-	@GetMapping(value={"/login"})
+	/*@GetMapping(value={"/login"})
+    public ModelAndView login(HttpServletRequest request) {
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("views/authentication/split/sign-in");
+        return mav;
+    }*/
+	@GetMapping(value={"/"})
     public ModelAndView login(HttpServletRequest request) {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("views/authentication/split/sign-in");
         return mav;
     }
-	
+    @GetMapping(value={"/index"})
+    public ModelAndView index(HttpServletRequest request) {
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("views/index");
+        return mav;
+    }
+    @GetMapping(value={"/notifications"})
+    public ModelAndView notifications(HttpServletRequest request) {
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("views/notifications");
+        return mav;
+    }
 	
 }
