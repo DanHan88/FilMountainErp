@@ -638,7 +638,7 @@
   /* -------------------------------------------------------------------------- */
   /*                             Echarts Total Sales                            */
   /* -------------------------------------------------------------------------- */
-
+/*코인 차트 일단 */
   const addClicksChartInit = () => {
     const { getColor, getData, getPastDates, getItemFromStore } =
       window.phoenix.utils;
@@ -647,13 +647,13 @@
     // getItemFromStore('phoenixTheme')
     const dates = getPastDates(11);
     const currentMonthData = [
-      2000, 2250, 1070, 1200, 1000, 1450, 3100, 2900, 1800, 1450, 1700
+      20000, 22500, 19000, 20000, 22000, 17000, 26000, 22000, 28000, 29000, 20000
     ];
 
-    const prevMonthData = [
+ /*   const prevMonthData = [
       1100, 1200, 2700, 1700, 2100, 2000, 2300, 1200, 2600, 2900, 1900
     ];
-
+*/
     const tooltipFormatter = params => {
       const currentDate = window.dayjs(params[0].axisValue);
       const prevDate = window.dayjs(params[0].axisValue).subtract(1, 'month');
@@ -781,7 +781,7 @@
           // axisLabel: { show: true }
         },
         series: [
-          {
+         /* {
             name: 'e',
             type: 'line',
             data: prevMonthData,
@@ -798,7 +798,7 @@
               color: getColor('info-lighter'),
               borderWidth: 3
             }
-          },
+          },*/
           {
             name: 'd',
             type: 'line',
