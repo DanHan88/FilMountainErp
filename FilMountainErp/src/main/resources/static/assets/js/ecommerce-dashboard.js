@@ -760,7 +760,7 @@
         legend: { show: false },
         series: [
           {
-            name: '72%',
+            name: '10,000 FIL',
             type: 'pie',
             radius: ['100%', '87%'],
             avoidLabelOverlap: false,
@@ -778,13 +778,13 @@
               show: true,
               position: 'center',
               formatter: '{a}',
-              fontSize: 23,
+              fontSize: 18,
               color: getColor('light-text-emphasis')
             },
             data: [
-              { value: 7200000, name: 'Percentage discount' },
-              { value: 1800000, name: 'Fixed card discount' },
-              { value: 1000000, name: 'Fixed product discount' }
+              { value: 7000000, name: 'Percentage discount' },
+              { value: 3000000, name: 'Fixed card discount' },
+             // { value: 1000000, name: 'Fixed product discount' }
             ]
           }
         ],

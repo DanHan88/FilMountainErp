@@ -179,11 +179,11 @@
               show: false
             },
             data: [
-              { value: 78, name: 'Product design' },
-              { value: 63, name: 'Development' },
-              { value: 56, name: 'QA & Testing' },
-              { value: 36, name: 'Customer queries' },
-              { value: 24, name: 'R & D' }
+              { value: 1500, name: 'NANO DC 001' },
+              { value: 2000, name: 'NANO DC 002' },
+              { value: 2000, name: 'NANO DC 003' },
+              { value: 1500, name: 'NANO DC 004' },
+              { value: 3000, name: 'STAKING' }
             ]
           }
         ],
