@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
-@RequestMapping("/user")
+@RequestMapping("/userLogin")
 public class LoginController {
 
 	@GetMapping(value={""})
